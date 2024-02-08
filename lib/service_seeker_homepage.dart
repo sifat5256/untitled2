@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:untitled2/custom_app_bar.dart';
 import 'package:untitled2/custom_bottom_nav_bar.dart';
+import 'otp_verification_screen.dart';
 import 'service_giver_home_page.dart';
 
 class ServiceSeekerHomePage extends StatelessWidget {
@@ -10,7 +11,7 @@ class ServiceSeekerHomePage extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>ServiceProviderPage()));
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>OTPScreen()));
         },
         child: const Icon(Icons.navigate_next),
       ),
